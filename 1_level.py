@@ -14,3 +14,13 @@ def fib(n):
 
 def is_palindrome(input_string):
     return input_string == input_string[::-1]
+
+
+def dec_to_bin(number):
+    stack = []
+    while(number != 0):
+        stack.append(number % 2)
+        number = number // 2
+        
+    stack.reverse()
+    return ''.join(str(num) for num in stack)
