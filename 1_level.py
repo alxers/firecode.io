@@ -24,3 +24,10 @@ def dec_to_bin(number):
         
     stack.reverse()
     return ''.join(str(num) for num in stack)
+
+
+def flip_vertical_axis(matrix):
+    for row, index in enumerate(matrix):
+        matrix[row][0], matrix[row][-1] = matrix[row][-1], matrix[row][0]
+        
+    return matrix
