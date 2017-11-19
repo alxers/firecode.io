@@ -31,3 +31,7 @@ def flip_vertical_axis(matrix):
         matrix[row][0], matrix[row][-1] = matrix[row][-1], matrix[row][0]
         
     return matrix
+
+
+def reverse_string(a_string):
+    return a_string[::-1]
