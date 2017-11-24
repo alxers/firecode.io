@@ -31,3 +31,18 @@ def flip_vertical_axis(matrix):
         matrix[row][0], matrix[row][-1] = matrix[row][-1], matrix[row][0]
         
     return matrix
+
+
+def reverse_string(a_string):
+    return a_string[::-1]
+
+
+def duplicate_items(list_numbers):
+    dup = []
+    for ind, el in enumerate(list_numbers):
+        if el in list_numbers[ind+1::]:
+            dup.append(el)
+
+
+    dup.sort()
+    return dup
